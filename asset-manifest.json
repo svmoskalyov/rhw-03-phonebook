@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/rhw-03-phonebook/static/js/main.c0426bfb.js",
+    "main.js": "/rhw-03-phonebook/static/js/main.b280e13d.js",
     "index.html": "/rhw-03-phonebook/index.html",
-    "main.c0426bfb.js.map": "/rhw-03-phonebook/static/js/main.c0426bfb.js.map"
+    "main.b280e13d.js.map": "/rhw-03-phonebook/static/js/main.b280e13d.js.map"
   },
   "entrypoints": [
-    "static/js/main.c0426bfb.js"
+    "static/js/main.b280e13d.js"
   ]
 }
