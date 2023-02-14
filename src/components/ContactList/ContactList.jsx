@@ -9,7 +9,11 @@ export const ContactList = ({ contacts, onDeleteContact }) => {
       {contacts.map(({ id, name, number }) => (
         <Item key={id}>
           {name}: {number}
-          <Button icon={ImUserMinus} onClick={() => onDeleteContact(id)}>
+          <Button
+            icon={ImUserMinus}
+            onClick={() => onDeleteContact(id)}
+            aria-label="Delete contact"
+          >
             Delete
           </Button>
         </Item>

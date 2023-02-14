@@ -58,7 +58,7 @@ export const ContactForm = ({ addContact }) => {
         </Label>
         <ErrorMessage name="number" />
 
-        <Button type="submit" icon={ImUserPlus}>
+        <Button type="submit" icon={ImUserPlus} aria-label="Add contact">
           Add contact
         </Button>
       </Forma>

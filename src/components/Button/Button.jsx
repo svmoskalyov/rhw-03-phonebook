@@ -7,9 +7,15 @@ export const Button = ({
   disabled = false,
   children,
   onClick,
+  ...allyProps
 }) => {
   return (
-    <StyledButton type={type} disabled={disabled} onClick={onClick}>
+    <StyledButton
+      type={type}
+      disabled={disabled}
+      onClick={onClick}
+      {...allyProps}
+    >
       {Icon && <Icon />}
       {children}
     </StyledButton>
@@ -22,4 +28,5 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   children: PropTypes.node.isRequired,
   onClick: PropTypes.func,
+  'aria-label': PropTypes.string.isRequired,
 };
