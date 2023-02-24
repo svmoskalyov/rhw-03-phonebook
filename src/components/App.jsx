@@ -72,19 +72,23 @@ export class App extends Component {
   };
 
   render() {
+    const { contacts, filter } = this.state;
+
     return (
       <Box width="500px" mx="auto" p={4}>
         <Section title="Phonebook">
           <ContactForm addContact={this.addContact} />
         </Section>
 
-        <Section title="Contacts">
-          <Filter value={this.state.filter} onChange={this.changeFilter} />
-          <ContactList
-            contacts={this.getVisibleContacts()}
-            onDeleteContact={this.deleteContact}
-          />
-        </Section>
+        {contacts.length > 0 && (
+          <Section title="Contacts">
+            <Filter value={filter} onChange={this.changeFilter} />
+            <ContactList
+              contacts={this.getVisibleContacts()}
+              onDeleteContact={this.deleteContact}
+            />
+          </Section>
+        )}
       </Box>
     );
   }
